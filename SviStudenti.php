@@ -27,19 +27,20 @@
 		<tbody>
 			<?php
 				include 'Functions.php';
-				foreach ($studenti as $key => $student) {
+				foreach ($aStudenti as $key => $student) {
+					var_dump($student->soba);
 					echo "
 						<tr>
 							<td>".($key+1)."</td>
-							<td>".$studnet->JMBAG."</td>
-							<td>".$studnet->ime."</td>
-							<td>".$studnet->prezime."</td>
-							<td>".$studnet->adresa."</td>
-							<td>".$studnet->PostanskiBroj."</td>
-							<td>".$studnet->GodinaStudija."</td>
-							<td>".$studnet->OstvareniEcts."</td>
-							<td>".$studnet->ProsjekOcjena."</td>
-							<td>".$studnet->soba->Naziv."</td>
+							<td>".$student->JMBAG."</td>
+							<td>".$student->ime."</td>
+							<td>".$student->prezime."</td>
+							<td>".$student->adresa."</td>
+							<td>".$student->PostanskiBroj."</td>
+							<td>".$student->GodinaStudija."</td>
+							<td>".$student->OstvarniEcts."</td>
+							<td>".$student->ProsjekOcjena."</td>
+							<td>".$student->soba->Naziv."</td>
 						</tr>
 					";
 				}

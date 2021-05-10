@@ -16,18 +16,18 @@
 	}
 	class Soba
 	{
-		public $IdSobe="";
-		public $Naziv="";
-		public $Opis="";
-		public $Kat="";
-		public $Studenti="";
+		public $IdSobe=" ";
+		public $Naziv=" ";
+		public $Opis=" ";
+		public $Kat=" ";
+		public $Studenti=" ";
 		function __construct($IdSobe, $Naziv, $Opis, $Kat, $Studenti)
 		{
 			$this->IdSobe=$IdSobe;
 			$this->Naziv=$Naziv;
 			$this->Opis=$Opis;
 			$this->Kat=$Kat;
-			$this->Student=$Student;
+			$this->Studenti=$Studenti;
 		}
 	}
 	class Studom
@@ -48,7 +48,8 @@
 				studentidodatnipodaci.Adresa,
 				studentidodatnipodaci.PostanskiBroj,
 				studentidodatnipodaci.Grad,
-				studentipodacistudij.OstvarniEcts,
+				studentipodacistudij.GodinaStudija,
+				studentipodacistudij.OstvareniECTS,
 				studentipodacistudij.ProsjekOcjena
 				FROM studenti JOIN studentidodatnipodaci ON studenti.JMBAG = studentidodatnipodaci.JMBAG JOIN studentipodacistudij ON studentipodacistudij.JMBAG = studentidodatnipodaci.JMBAG";
 

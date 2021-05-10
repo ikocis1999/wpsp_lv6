@@ -1,5 +1,5 @@
 <?php
-include 'classes.php';
+require_once('classes.php');
 $oVeza=new Configuration('localhost',
 'studentskidom',
 'root',
@@ -7,7 +7,6 @@ $oVeza=new Configuration('localhost',
 try
 {
  $oConnection = new PDO("mysql:host=$oVeza->host;dbname=$oVeza->dbname", $oVeza->username, $oVeza->password);
- echo "Connected to $oVeza->dbname at $oVeza->host successfully.";
 }
 catch (PDOException $pe)
 {
